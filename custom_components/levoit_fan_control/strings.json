@@ -1,0 +1,18 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Levoit Fan (IR)",
+        "description": "Select your fan model and the IR emitter to use.",
+        "data": {
+          "profile_id": "Fan model",
+          "infrared_emitter_entity_id": "IR emitter"
+        }
+      }
+    },
+    "abort": {
+      "no_emitters": "No infrared emitter found. Please set up an IR emitter (e.g. via ESPHome) first.",
+      "no_profiles": "No device profiles found. This is a bug — please report it."
+    }
+  }
+}

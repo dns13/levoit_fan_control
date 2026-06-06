@@ -1,0 +1,13 @@
+{
+  "domain": "levoit_fan_control",
+  "name": "Levoit Fan (IR)",
+  "version": "0.1.0",
+  "codeowners": ["@dns13"],
+  "config_flow": true,
+  "dependencies": ["infrared"],
+  "documentation": "https://github.com/dns13/levoit_fan_control",
+  "issue_tracker": "https://github.com/dns13/levoit_fan_control/issues",
+  "integration_type": "device",
+  "iot_class": "assumed_state",
+  "requirements": ["infrared-protocols>=6.0.0", "PyYAML>=6.0"]
+}

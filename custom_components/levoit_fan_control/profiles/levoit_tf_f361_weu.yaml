@@ -1,0 +1,17 @@
+manufacturer: Levoit
+model: TF-F361-WEU
+display_name: Levoit Tower Fan (TF-F361-WEU)
+protocol: nec
+# Replace address and command bytes below with your actual NEC codes
+address: 0xFA05
+commands:
+  power: 0xFE01
+  speed_1: 0x01
+  speed_2: 0x02
+  speed_3: 0x03
+  speed_4: 0x04
+  oscillation: 0xFD02
+features:
+  power: toggle
+  speeds: [speed_1, speed_2, speed_3, speed_4]
+  oscillation: toggle

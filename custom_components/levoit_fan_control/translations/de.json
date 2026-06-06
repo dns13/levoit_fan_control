@@ -1,0 +1,18 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Levoit Lüfter (IR) einrichten",
+        "description": "Wähle dein Lüftermodell und den zu verwendenden IR-Sender.",
+        "data": {
+          "profile_id": "Lüftermodell",
+          "infrared_emitter_entity_id": "IR-Sender"
+        }
+      }
+    },
+    "abort": {
+      "no_emitters": "Kein Infrarot-Sender gefunden. Bitte zuerst einen IR-Sender einrichten (z.B. über ESPHome).",
+      "no_profiles": "Keine Geräteprofile gefunden. Das ist ein Fehler — bitte melden."
+    }
+  }
+}
