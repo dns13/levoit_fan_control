@@ -33,7 +33,7 @@ class LevoitFanConfigFlow(ConfigFlow, domain=DOMAIN):
         if not emitters:
             return self.async_abort(reason="no_emitters")
 
-        profiles = list_profiles()
+        profiles = await self.hass.async_add_executor_job(list_profiles)
         if not profiles:
             return self.async_abort(reason="no_profiles")
 
@@ -57,7 +57,7 @@ class LevoitFanConfigFlow(ConfigFlow, domain=DOMAIN):
                     SelectSelectorConfig(
                         options=[
                             {"value": pid, "label": name}
-                            for pid, name in list_profiles().items()
+                            for pid, name in profiles.items()
                         ],
                         mode=SelectSelectorMode.LIST,
                     )
